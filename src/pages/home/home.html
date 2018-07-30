@@ -1,17 +1,29 @@
-<ion-header>
-  <ion-navbar>
+<!--<ion-header>
+  <<ion-navbar>
     <ion-title>Home</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content padding class="getstart">
   <h2>Welcome!</h2>
-  <p>
-    Wealth to Waste is a points rewards system that pays cash to waste producers.
-  </p>
+  <div class="homeimage">
+  <img height="150" src="../assets/imgs/cash_trash_logo.png"/>
+  </div>
+  <h2>
+    We use a #WealthNotWaste to teach Waste Produc to manage their waste and it is a points rewards system that pays cash to waste producers.
+  </h2>
 
   <div class="home-content">
-    <button ion-button full outline [navPush]="login">Log In</button>
-    <button ion-button full color="secondary" [navPush]="signup">Sign Up</button>
+    <button ion-button full color="light" [navPush]="login">Log In</button>
+    <button ion-button full color="primary" [navPush]="signup">Sign Up</button>
   </div>
+
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-instagram"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>

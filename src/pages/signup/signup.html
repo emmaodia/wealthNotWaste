@@ -5,7 +5,37 @@
 </ion-header>
 
 <ion-content padding>
-  <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Full Names</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+  <button ion-button color="secondary" round>Secondary Round</button>
+  <!-- <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
     <ion-item [class.invalid]="!signupForm.controls.email.valid && signupForm.controls.email.touched"
       [class.valid]="signupForm.controls.email.valid && signupForm.controls.email.touched">
       <ion-label stacked>Email</ion-label>
@@ -31,5 +61,5 @@
     <button ion-button block type="submit" [disabled]="!signupForm.valid">
       Create a new Account
     </button>
-  </form>
+  </form> -->
 </ion-content>

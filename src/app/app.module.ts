@@ -14,6 +14,8 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { DashPage } from '../pages/dash/dash';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,12 +29,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DashPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(firebaseConfig.fire)
+    //AngularFireModule.initializeApp(firebaseConfig.fire)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,14 +45,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DashPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     AngularFireAuth,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    //AuthProvider
   ]
 })
 export class AppModule {}
